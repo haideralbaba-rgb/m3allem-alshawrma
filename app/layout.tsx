@@ -3,17 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "m3allem alshawrma | معلم شاورما",
-  description:
-    "معلم شاورما — شاورما، برغر ووجبات بطابع المعلم.",
-  keywords: [
-    "معلم شاورما",
-    "m3allem alshawrma",
-    "shawarma",
-    "Iraq",
-    "مطعم",
-    "شاورما",
-    "برغر",
-  ],
+  description: "معلم شاورما — شاورما، برغر ووجبات بطابع المعلم.",
 };
 
 export default function RootLayout({
@@ -22,14 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ar"
-      dir="rtl"
-      className="bg-[#070707]"
-    >
-      <body className="noise">
-        {children}
-      </body>
+    <html lang="ar" dir="rtl">
+      <body>{children}</body>
     </html>
   );
 }
